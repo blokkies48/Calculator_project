@@ -1,0 +1,168 @@
+<Button>:
+    background_normal: ''
+    background_color: '#345728'
+    size_hint: .2, .2
+
+
+<MyLayout>:
+    BoxLayout:
+        orientation:'vertical'
+        size: root.width,root.height
+        Label:
+            id: top_dis
+            text:'--'
+            halign: 'right'
+            size_hint: 1,.10 
+            font_size: 32
+            
+        TextInput:
+            id: calc_dis
+            text:'0'
+            halign: 'right'
+            font_size: 64
+            size_hint: 1,.15 
+            disabled: True
+            background_disabled_normal: ''
+            background_color: 1, 1, 1, 1
+            disabled_foreground_color: 0, 0, 0, 1
+        GridLayout:
+            cols: 4
+            rows: 5
+            padding: 5
+            spacing: 5
+            
+
+            Button:
+                
+                font_size: 32
+                text: '%'
+                background_color: '#485728'
+                id: percentage
+                on_press: root.percentage()
+
+            Button:
+                font_size: 32
+                text: 'CE'
+                background_color: '#485728'
+                id: clear_line
+                on_press: root.clear_line()
+    
+            Button:
+                font_size: 32
+                text: 'C'
+                background_color: '#485728'
+                id: clear_all
+                on_press: root.clear()
+
+            Button:
+                font_size: 32
+                text: '÷'
+                background_color: '#485728'
+                id: divide
+                on_press: root.divide()
+
+            Button:
+                font_size: 32
+                text: '7'
+                id: seven
+                on_press: root.input(7)
+
+            Button:
+                font_size: 32
+                text: '8'
+                id: eight
+                on_press: root.input(8)
+    
+            Button:
+                font_size: 32
+                text: '9'
+                id: nine
+                on_press: root.input(9)
+
+            Button:
+                font_size: 32
+                text: 'x'
+                background_color: '#485728'
+                id: multiply
+                on_press: root.multiply()
+            
+            Button:
+                font_size: 32
+                text: '4'
+                id: four
+                on_press: root.input(4)
+
+            Button:
+                font_size: 32
+                text: '5'
+                id: five
+                on_press: root.input(5)
+    
+            Button:
+                font_size: 32
+                text: '6'
+                id: six
+                on_press: root.input(6)
+
+            Button:
+                font_size: 32
+                text: '-'
+                background_color: '#485728'
+                id: minus
+                on_press: root.minus()
+            
+            Button:
+                font_size: 32
+                text: '1'
+                id: one
+                on_press: root.input(1)
+
+            Button:
+                font_size: 32
+                text: '2'
+                id: two
+                on_press: root.input(2)
+    
+            Button:
+                font_size: 32
+                text: '3'
+                id: three
+                on_press: root.input(3)
+
+            Button:
+                font_size: 32
+                text: '+'
+                background_color: '#485728'
+                id: plus
+                on_press: root.plus()
+
+            Button:
+                font_size: 32
+                text: '+/-'
+                id: abs
+                on_press: root.get_abs()
+
+            Button:
+                font_size: 32
+                text: '0'
+                id: zero
+                on_press: root.input(0)
+    
+            Button:
+                font_size: 32
+                text: '.'
+                id: point
+                on_press: root.input_point()
+
+            Button:
+                font_size: 32
+                text: '='
+                background_color: 'FF2222'
+                id: equals
+                on_press: root.equal()
+            
+
+
+
+            
+    
