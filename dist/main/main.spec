@@ -23,7 +23,7 @@ a = Analysis(
 )
 pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
 
-a.datas += [('Code\design.kv','C:\\Users\\Jonathan\\Desktop\\Calculator_project\design.kv','DATA')]
+a.datas += [('Code\design.kv','F:\\Calculator_project\design.kv','DATA')]
 
 exe = EXE(
     pyz,
@@ -44,7 +44,7 @@ exe = EXE(
 )
 coll = COLLECT(
     exe,
-    Tree('C:\\Users\\Jonathan\\Desktop\\Calculator_project\\'),
+    Tree('F:\\Calculator_project\\'),
     a.binaries,
     a.zipfiles,
     a.datas,
