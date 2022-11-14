@@ -1,13 +1,17 @@
+# Button format used
 <Button>:
     background_normal: ''
     background_color: '#345728'
     size_hint: .2, .2
 
-
+# Reference to the MyLayout class in main.py
 <MyLayout>:
+    # Main layout that contains everything
     BoxLayout:
+        # parameters for layout
         orientation:'vertical'
         size: root.width,root.height
+        # Contents of the layout
         Label:
             id: top_dis
             text:'--'
@@ -25,6 +29,7 @@
             background_disabled_normal: ''
             background_color: 1, 1, 1, 1
             disabled_foreground_color: 0, 0, 0, 1
+        # Inner layour for all buttons
         GridLayout:
             cols: 4
             rows: 5
@@ -33,7 +38,6 @@
             
 
             Button:
-                
                 font_size: 32
                 text: '%'
                 background_color: '#485728'
